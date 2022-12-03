@@ -76,3 +76,6 @@ def setconfig():
     ez.change_config(requested_config)
     
     return "200"
+
+if __name__ == "__main__":
+    app.run(debug=False, port=42124, host='0.0.0.0')
