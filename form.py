@@ -4,7 +4,7 @@ from wtforms.validators import IPAddress
 
 class InputServerIP(FlaskForm):
     server_ip = StringField(
-        "192.168.1.4",
+        default="192.168.1.4",
         label = "Server IP Address",
         validators = [IPAddress()],
         description = "Please enter the IP Address of the server"
